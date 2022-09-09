@@ -13,16 +13,13 @@ void setup() {
   stepy = height/row;
   
   noLoop();
-  frameRate(2);
+  frameRate(10);
 }
 
 void draw() {
   
   for(int i= 0; i < col; i++) {
     for(int j = 0; j < row; j++) {
-      
-      // check values
-      println(i, j);
       
       float x = i * stepx;
       float y = j * stepy;
