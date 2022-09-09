@@ -1,10 +1,22 @@
-// 
+/* Sairus Pradhan (218946467)
+FA DATT 2040 - Lab 1
+09/ 09/ 2022
+Sketch 1
 
+Using the code from the grid, I've made an abstract wave motion out of text.
+These waves obstruct the text so much that it just looks like debris in a tornado or
+space junk flying in space.
 
+I've added the idea of inputs (keyPress: either press 1 or 2) that follow with random
+outputs. This only affects the background color and text color.
 
-// https://timrodenbroeker.de/processing-tutorial-kinetic-typography-1/
+I have used outside sources to bring my sketch to life. I worked with each function
+before and i've "cited" them by adding  their links beside the code to let you know 
+where I've got them from. I say "cited" because this is the way I've been taught to 
+cite when coding, so if there is a problemnjust let me know and i'll take 
+responsibility for this HW.
+*/
 
-// https://processing.org/reference/PGraphics.html
 PFont font;
 PGraphics pg;
 
@@ -25,7 +37,9 @@ void setup() {
 
 void draw() {
   
-  // PGraphics 
+ // https://processing.org/reference/PGraphics.html
+ // https://timrodenbroeker.de/processing-tutorial-kinetic-typography-1/
+
   pg.beginDraw();
   pg.fill(gridColorR, gridColorG, gridColorB);
   pg.background(bgColorR, bgColorG, bgColorB);
@@ -72,7 +86,6 @@ void draw() {
     }
   }
   
-    
 }
 
 void keyPressed() {
