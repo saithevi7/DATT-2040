@@ -13,7 +13,7 @@ void setup() {
   stepy = height/row;
   
   noLoop();
-  frameRate(10);
+  frameRate(2);
 }
 
 void draw() {
@@ -25,11 +25,11 @@ void draw() {
       float y = j * stepy;
       
       if (random(1) > 0.5) {
-        fill(255);
+        fill(255, x, y);
       }
       
       else {
-        fill(0);
+        fill(0, x, y);
       }
       
       rect(x, y, stepx, stepy);
