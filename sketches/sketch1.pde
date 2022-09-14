@@ -13,7 +13,7 @@ outputs. This only affects the background color and text color.
 I have used outside sources to bring my sketch to life. I worked with each function
 before and i've "cited" them by adding  their links beside the code to let you know 
 where I've got them from. I say "cited" because this is the way I've been taught to 
-cite when coding, so if there is a problemnjust let me know and i'll take 
+cite when coding, so if there is a problem just let me know and i'll take 
 responsibility for this HW.
 */
 
@@ -39,10 +39,11 @@ void draw() {
   
  // https://processing.org/reference/PGraphics.html
  // https://timrodenbroeker.de/processing-tutorial-kinetic-typography-1/
+ // buffer effect, runs program a bit smoother.
 
   pg.beginDraw();
-  pg.fill(gridColorR, gridColorG, gridColorB);
-  pg.background(bgColorR, bgColorG, bgColorB);
+  pg.fill(gridColorR, gridColorG, gridColorB); // rgb values
+  pg.background(bgColorR, bgColorG, bgColorB); // rgb values
   pg.textFont(font);
   pg.textSize(600);
   pg.pushMatrix();
@@ -52,24 +53,31 @@ void draw() {
   pg.text("LOL", 0, 0);
   pg.popMatrix();
   pg.endDraw();
-
+  
+  // code from class
+  // values
   int col = 16;
   int row = 16;
 
   int stepX = int(width/col);
   int stepY = int(height/row);
 
+  // loop for grid
   for (int j = 0; j < row; j++) {
     for (int i = 0; i < col; i++) {
       
       int x = i * stepX;
       int y = j * stepY;
 
-      // wave
+      /* wave
+         what happens here is the grid becomes a wave creates 
+         this wave movement on the text. 
+         FIRST PART IN MANIPULATING THE WAVE */
       int wave = int(sin(frameCount * 0.05 + (i * j) * 0.07) * 200);
       int wave2 = int(cos(frameCount * 0.05 + (i * j) * 0.09) * 20);
 
       // https://py.processing.org/reference/copy.html
+      // SECOND PART OF MANIPULATING THE WAVE
       // start
       int sx = x + wave;
       int sy = y + wave2;
@@ -88,9 +96,11 @@ void draw() {
   
 }
 
+// Inputs that follow with random outputs
 void keyPressed() {
   if (key == '1') {
-    bgColorR = int(random(50, 100));
+    // very specific changes
+    bgColorR = int(random(50, 100)); 
     bgColorG = int(random(50, 60));
     bgColorB = int(random(167, 194));
     /* 
@@ -100,6 +110,7 @@ void keyPressed() {
   }
 
   if (key == '2') {
+    // very specific changes
     gridColorR = int(random(122, 255));
     gridColorG = int(random(150, 160));
     gridColorB = int(random(10, 20));
