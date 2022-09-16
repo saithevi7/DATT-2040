@@ -24,7 +24,6 @@ void draw() {
   float maxDis = dist(0, 0, width/2, height/2);
   float colour = map(dis, 0, maxDis, 0, 255);
   
-  // boundary check for shape 1
   // x boundary
   if (pos.x > width-(pos.z/2) || pos.x < pos.z/2) {   
     acc.x = acc.x * -1;
