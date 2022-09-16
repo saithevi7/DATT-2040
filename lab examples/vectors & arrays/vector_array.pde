@@ -22,6 +22,7 @@ void setup() {
 
 void draw() {
   background(0);
+  
   for(int j = 0; j < num; j++) {
     
     pos[j].add(acc[j]);
@@ -36,8 +37,8 @@ void draw() {
   }
   
     ellipse(pos[j].x, pos[j].y, pos[j].z, pos[j].z);
+   
   }
-  
 }
 
 
