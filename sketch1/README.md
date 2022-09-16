@@ -1,0 +1,1 @@
+# Grid sketch from Week 1.
