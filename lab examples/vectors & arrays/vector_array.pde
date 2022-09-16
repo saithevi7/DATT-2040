@@ -23,6 +23,11 @@ void setup() {
 void draw() {
   background(0);
   
+  fill(0,20);
+  rect(0,0, width, height);
+  
+  
+  
   for(int j = 0; j < num; j++) {
     
     pos[j].add(acc[j]);
@@ -36,7 +41,9 @@ void draw() {
     acc[j].y = acc[j].y * -1; 
   }
   
-    ellipse(pos[j].x, pos[j].y, pos[j].z, pos[j].z);
+    stroke(255);
+    fill(255, 30);
+    ellipse(pos[j].x, pos[j].y, pos[j].z + sin(pos[j].z*frameCount*0.001), pos[j].z + sin(pos[j].z*frameCount*0.001));
    
   }
 }
