@@ -70,8 +70,11 @@ void draw() {
       
       acc[j].x = acc[j].x * -1; // change x postion
       
+      // remove or comment out this fill to remove flash
       fill(random(200), random(200), random(200)); // change colors if distance matches
-    }
+      //fill(255); - ADD THIS TO REMOVE FLASH
+  
+}
     
     else {
      noStroke(); 
