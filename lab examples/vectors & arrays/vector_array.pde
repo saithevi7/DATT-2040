@@ -1,8 +1,21 @@
-PVector[] pos;
-PVector[] acc;
+/* Sairus Pradhan (218946467)
+FA DATT 2040 - Lab 1
+09/ 16/ 2022
+Sketch 2 (FLASH WARNING)
+Used 3 PVectors Method to create a sketch. 
+add() - create movement
+dist() - check distance and do something if conditions are met
+random2D() - give the movement and spawn some randomness. */
 
-int num = 50;
-int speed = 4;
+
+// vectors
+PVector[] pos; 
+PVector[] acc;
+PVector rand;
+
+// values
+int num = 50; // amount
+int speed = 4; 
 
 
 void setup() {
@@ -10,6 +23,7 @@ void setup() {
   
   pos = new PVector[num];
   acc = new PVector[num];
+  rand = PVector.random2D();
   
   // populate
   for (int i = 0; i < num; i++) {
@@ -17,7 +31,7 @@ void setup() {
     acc[i] = new PVector(random(-speed, speed), random(-speed, speed), 0);
 
   }
-  
+  // "cheat" from lab
   stroke(255);
   noFill();
   background(0);
@@ -27,11 +41,11 @@ void draw() {
   background(0);
   
   fill(0,20);
-  rect(0,0, width, height);
+  rect(0,0, width, height); // "cheat" from lab
     
   for(int j = 0; j < num; j++) {
     
-    pos[j].add(acc[j]);
+    pos[j].add(acc[j]); // add pos xyz components to acc
     
      // x boundary
   if (pos[j].x > width-(pos[j].z/2) || pos[j].x < pos[j].z/2) {   
@@ -52,11 +66,11 @@ void draw() {
       stroke(255);
       
       strokeWeight(1.5);
-      line(pos[i].x, pos[i].y, pos[j].x, pos[j].y);
+      line(pos[i].x, pos[i].y, pos[j].x, pos[j].y); // create line 
       
-      acc[j].x = acc[j].x * -1;  
+      acc[j].x = acc[j].x * -1; // change x postion
       
-      fill(random(200));
+      fill(random(200)); // change colors if distance matches
     }
     
     else {
@@ -65,12 +79,13 @@ void draw() {
     
   }
     strokeWeight(1);
-    ellipse(pos[j].x, pos[j].y, pos[j].z + sin(pos[j].z*frameCount*0.001), pos[j].z + sin(pos[j].z*frameCount*0.001));
+    // add random2D() to pos' xyz components
+    ellipse(pos[j].x + rand.x, pos[j].y + rand.y, pos[j].z + sin(pos[j].z*frameCount*0.001), pos[j].z + sin(pos[j].z*frameCount*0.001));
    
   }
 }
 
-
+// reset
 void mousePressed() {
   for (int i = 0; i < num; i++) {
     pos[i] = new PVector(random(20, 680), random(20,680), 50);
