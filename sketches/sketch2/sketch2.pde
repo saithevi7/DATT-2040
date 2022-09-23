@@ -2,7 +2,9 @@
 FA DATT 2040 - Lab 1
 09/ 16/ 2022
 Sketch 2 (FLASH WARNING)
-Used 3 PVectors Method to create a sketch. 
+Used 3 PVectors Method to create a sketch: circles changes position and color 
+depending on distance
+
 add() - create movement
 dist() - check distance and do something if conditions are met
 random2D() - give the movement and spawn some randomness. */
