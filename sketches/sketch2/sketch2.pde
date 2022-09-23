@@ -70,7 +70,7 @@ void draw() {
       
       acc[j].x = acc[j].x * -1; // change x postion
       
-      fill(random(200)); // change colors if distance matches
+      fill(random(200), random(200), random(200)); // change colors if distance matches
     }
     
     else {
