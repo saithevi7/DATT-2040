@@ -1,7 +1,7 @@
 PVector[] pos;
 PVector[] acc;
 
-int num = 100;
+int num = 50;
 int speed = 4;
 
 
@@ -18,6 +18,9 @@ void setup() {
 
   }
   
+  stroke(255);
+  noFill();
+  background(0);
 }
 
 void draw() {
@@ -25,9 +28,7 @@ void draw() {
   
   fill(0,20);
   rect(0,0, width, height);
-  
-  
-  
+    
   for(int j = 0; j < num; j++) {
     
     pos[j].add(acc[j]);
@@ -41,8 +42,29 @@ void draw() {
     acc[j].y = acc[j].y * -1; 
   }
   
-    stroke(255);
-    fill(255, 30);
+  // find distance
+  for (int i =0; i < num; i++) {
+    
+    float dist = PVector.dist(pos[j], pos[i]);
+    
+    if (dist <= 100) {
+       
+      stroke(255);
+      
+      strokeWeight(1.5);
+      line(pos[i].x, pos[i].y, pos[j].x, pos[j].y);
+      
+      acc[j].x = acc[j].x * -1;  
+      
+      fill(random(200));
+    }
+    
+    else {
+     noStroke(); 
+    }
+    
+  }
+    strokeWeight(1);
     ellipse(pos[j].x, pos[j].y, pos[j].z + sin(pos[j].z*frameCount*0.001), pos[j].z + sin(pos[j].z*frameCount*0.001));
    
   }
