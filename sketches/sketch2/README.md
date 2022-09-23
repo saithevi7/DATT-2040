@@ -4,4 +4,3 @@
 - TAKE OFF `fill(random(200), random(200), random(200));` TO REMOVE FLASH
 - UNCOMMENT `fill(255);` TO REMOVE FLASH
 
-image.png
