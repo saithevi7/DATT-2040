@@ -1,4 +1,10 @@
+/* Sairus Pradhan (218946467)
+FA DATT 2040 - Lab 1
+09/ 09/ 2022
+Sketch 3
 
+
+*/
 
 
 void setup() {
