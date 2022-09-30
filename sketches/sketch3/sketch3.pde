@@ -1,6 +1,6 @@
 /* Sairus Pradhan (218946467)
-FA DATT 2040 - Lab 1
-09/ 09/ 2022
+FA DATT 2040 - Lab 3
+09/ 23/ 2022
 Sketch 3
 
 Using code from week 3 and my sketch1 lab and experimenting further:
