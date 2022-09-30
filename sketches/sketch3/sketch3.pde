@@ -3,7 +3,7 @@ FA DATT 2040 - Lab 3
 09/ 23/ 2022
 Sketch 3
 
-Using code from week 3 and my sketch1 lab and experimenting further:
+Using code from week 3, my sketch1 lab, and online tutorials to experiment further:
 https://github.com/atarilover123/DATT-2040-Math-Art-Code/blob/main/Week_3/Waves/E3_sin_scale/E3_sin_scale.pde */
 
 
@@ -12,7 +12,7 @@ void setup() {
   size(900, 900);
   background(255); 
 }
-
+// Used code from tutorial: https://timrodenbroeker.de/wave-figures/
 // draw
 void draw() {
   translate(width/2, height/2);
