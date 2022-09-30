@@ -7,12 +7,13 @@ Using code from week 3 and my sketch1 lab and experimenting further:
 https://github.com/atarilover123/DATT-2040-Math-Art-Code/blob/main/Week_3/Waves/E3_sin_scale/E3_sin_scale.pde
 */
 
-
+// canvas
 void setup() {
   size(900, 900);
   background(255); 
 }
 
+// draw
 void draw() {
   translate(width/2, height/2);
   float mag = 400;
