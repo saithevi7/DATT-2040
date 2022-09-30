@@ -4,8 +4,8 @@ FA DATT 2040 - Lab 3
 Sketch 3
 
 Using code from week 3 and my sketch1 lab and experimenting further:
-https://github.com/atarilover123/DATT-2040-Math-Art-Code/blob/main/Week_3/Waves/E3_sin_scale/E3_sin_scale.pde
-*/
+https://github.com/atarilover123/DATT-2040-Math-Art-Code/blob/main/Week_3/Waves/E3_sin_scale/E3_sin_scale.pde */
+
 
 // canvas
 void setup() {
@@ -16,8 +16,8 @@ void setup() {
 // draw
 void draw() {
   translate(width/2, height/2);
-  float mag = 400;
-  float s = 20; // size
+  float mag = 400; // magnitude of wave
+  float s = 20; // size of wave
   noStroke();
   
   // for loop for wave
