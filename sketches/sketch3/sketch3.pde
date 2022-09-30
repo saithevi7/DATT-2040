@@ -39,5 +39,6 @@ void draw() {
     
     // adds another layer ontop to create this final product
     rect(wave2, wave1, s, s);
+    rect(wave1, wave1, s, s); // line in the middle going from light to dark and then dark to light
   }  
 }
