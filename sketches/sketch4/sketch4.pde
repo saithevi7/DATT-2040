@@ -1,12 +1,19 @@
 /* Sairus Pradhan (218946467)
 FA DATT 2040 - Lab 1
-09/ 16/ 2022
+10/ 09/ 2022
 Sketch 4
-Made an ecosystem with a predator called "Deemo" from a video game I played.
+Made an ecosystem with a predator called "Deemo" from a video game I played with prey
+for food.
+
 ALL DRAWINGS ARE ORIGINAL AND DRAWN BY THE STUDENT.
+
 More OOP focused rather than the art part. The art component is still there but not
 as much as the code itself (Tried using more options from PVector refrences and other 
 tutroials from processing like void run() and update()).
+
+If the predator is approached by the mouse too much you'll get a special screen where
+the predator "Deemo" will become sad and heart broken because you won[t allow him to
+eat his food.
 */
 
 // Variables

@@ -82,7 +82,7 @@ class Deemo {
     imageMode(CENTER);
     image(currentDeemo, pos.x, pos.y);
   }
-  
+  // call updates and draw
   void run() {
     update();
     draw();
