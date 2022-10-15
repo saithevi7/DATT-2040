@@ -2,7 +2,7 @@
 int numDeemo = 1;
 int numFood = 8;
 
-PVector[] acc;
+
 
 // arrays 
 Deemo[] mainDeemo = new Deemo[numDeemo];
@@ -19,6 +19,7 @@ void setup() {
   // populate
   for (int i=0; i<food.length; i++) {
     food[i] = new food(random(width), random(height));    
+    
   }    
 }
 
