@@ -45,7 +45,7 @@ class Deemo {
         foodSearch();
       }
       
-      // no interaction, then search for note
+      // no interaction, then search for food
       if (!searching) { 
         foodTarget();
         searching = true;
@@ -53,7 +53,7 @@ class Deemo {
       }     
   }
   
-    // delay in gaining the note to give more of a "ghostly" feeling
+    // delay in gaining the food to give more of a "ghostly" feeling
     if (move || searching) {
       pos = pos.lerp(target, 0.08).add(new PVector(random(-1, 2), random(-1, 2)));
     }
@@ -64,7 +64,7 @@ class Deemo {
       currentDeemo = inverseDeemo;
     }
     
-    // search for note
+    // search for food 
     if (searching && pos.dist(target) < 5) {
       food[findFood].appear = false; 
       foodTarget();
@@ -87,12 +87,12 @@ class Deemo {
     draw();
   }
   
-  // randomly search note
+  // randomly search food
   void foodSearch() {
     target = new PVector(random(50, width-50), random(50, height-50));
   }
   
-  // array for note, if appear true (always)
+  // array for food, if appear true (always)
   void foodTarget() {
     findFood = int(random(food.length));
     if (food[findFood].appear) {

@@ -19,10 +19,7 @@ class food {
       ellipseMode(CENTER);
       fill(0);
       ellipse(pos.x, pos.y, 30, 30);
-      
-      fill(0);
-      rect(pos.x+4.5, pos.y-55, 10, 60);
-      
+     
     }
   }
 
