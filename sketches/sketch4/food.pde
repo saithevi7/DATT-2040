@@ -17,7 +17,6 @@ class food {
   
   // "food"
   void draw() {
- 
     pos.add(acc); // ADD pos xyz components to acc
     
      // x boundary
