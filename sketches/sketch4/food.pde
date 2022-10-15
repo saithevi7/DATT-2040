@@ -35,7 +35,8 @@ class food {
       ellipse(pos.x, pos.y, 30, 30);
     }
   }
-
+  
+  // call void func
   void run() {
     update();
     draw();

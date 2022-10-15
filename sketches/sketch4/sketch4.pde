@@ -12,7 +12,7 @@ as much as the code itself (Tried using more options from PVector refrences and 
 tutroials from processing like void run() and update()).
 
 If the predator is approached by the mouse too much you'll get a special screen where
-the predator "Deemo" will become sad and heart broken because you won[t allow him to
+the predator "Deemo" will become sad and heart broken because you won't allow him to
 eat his food.
 */
 
