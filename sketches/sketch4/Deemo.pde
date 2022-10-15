@@ -40,7 +40,7 @@ class Deemo {
     // if interaction, then move
     if (move) { 
       searching = false;
-      moveMarkTime = millis();
+      moveMarkTime = millis(); // return millisecond
       currentDeemo = deemoLeftside; 
       if (pos.dist(target) < triggerDistance2) {
         foodSearch();
@@ -53,7 +53,8 @@ class Deemo {
         currentDeemo = deemoLeftside; 
       }     
   }
-  
+    
+    // LERP: https://processing.org/reference/PVector_lerp_.html
     // delay in gaining the food to give more of a "ghostly" feeling
     if (move || searching) {
       pos = pos.lerp(target, 0.08).add(new PVector(random(-1, 2), random(-1, 2)));
@@ -65,7 +66,7 @@ class Deemo {
       currentDeemo = inverseDeemo;
     }
     
-    // search for food 
+    // search for food using distance
     if (searching && pos.dist(target) < 5) {
       food[findFood].appear = false; 
       foodTarget();
