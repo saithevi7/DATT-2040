@@ -80,7 +80,6 @@ class Deemo {
   // current deemo image
   void draw() {    
     imageMode(CENTER);
-  
     image(currentDeemo, pos.x, pos.y);
   }
   
