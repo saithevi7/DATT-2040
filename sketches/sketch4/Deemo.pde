@@ -1,3 +1,4 @@
+// predator "Deemo" class
 class Deemo {
 
   // variables 

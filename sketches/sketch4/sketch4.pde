@@ -5,7 +5,7 @@ Sketch 4
 Made an ecosystem with a predator called "Deemo" from a video game I played.
 ALL DRAWINGS ARE ORIGINAL AND DRAWN BY THE STUDENT.
 More OOP focused rather than the art part. The art component is still there but not
-as much as the code itself.
+as much as the code itself (Tried using more options from PVector refrences and other tutroials from processing).
 */
 
 // Variables
