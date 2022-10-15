@@ -1,3 +1,11 @@
+/* Sairus Pradhan (218946467)
+FA DATT 2040 - Lab 1
+09/ 16/ 2022
+Sketch 4
+Made an ecosystem with a predator called "Deemo" from a video game I played.
+ALL DRAWINGS ARE ORIGINAL AND DRAWN BY THE STUDENT.
+*/
+
 // Variables
 int numDeemo = 1;
 int numFood = 15;
