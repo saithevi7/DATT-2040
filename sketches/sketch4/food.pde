@@ -9,7 +9,7 @@ class food {
   // contructor
   food(float x, float y) {
     pos = new PVector(random(x), random(y), random(30,70));
-    acc = new PVector(random(-4,4), random(-4,4), 0);
+    acc = new PVector(random(-2,2), random(-2,2), 0);
     
   }
      
@@ -29,8 +29,7 @@ class food {
   if (pos.y > height-pos.z/2 || pos.y < pos.z/2) {
     acc.y = acc.y * -1; 
   }      
-      
-     
+        
     if(appear) {
       ellipseMode(CENTER);
       fill(0);

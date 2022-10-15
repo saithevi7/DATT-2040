@@ -2,8 +2,6 @@
 int numDeemo = 1;
 int numFood = 15;
 
-
-
 // arrays 
 Deemo[] mainDeemo = new Deemo[numDeemo];
 food[] food = new food[numFood];
