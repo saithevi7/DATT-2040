@@ -1,6 +1,6 @@
 // Variables
 int numDeemo = 1;
-int numFood = 8;
+int numFood = 15;
 
 
 
