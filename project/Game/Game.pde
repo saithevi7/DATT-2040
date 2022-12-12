@@ -61,33 +61,39 @@ void draw() {
   if (mid_x > 597) {mid_x = -597;} if (mid_x2 > 597) {mid_x2 = -597;}
   if (bot_x > 597) {bot_x = -597;} if (bot_x2 > 597) {bot_x2 = -597;}
   
+  // spawn enemies
   drawEnemy();
   fill(255);
   stroke(255);
   
+  // spawn bullets if shot
   drawBullet();
+  
+  // spawn player
   player.drawPlayer();
   
+  // show points 
   stroke(255);
   fill(255);
   textSize(30);
   textSize(25);
   text("Points: " + points, 10, 25);
   
+  // call to detect collision
   Collision();
 }
 
+
 void drawBullet() {
   for (int i = 0; i<bullets.size(); i++) {
-    //i is every number from 0 to the size of the bullet array
-    //println(bullets.get(i).x);
+    // i(0) to the size of the bullet array
     bullets.get(i).drawBullet();
   }
 }
 
 void Collision() {
   for (int i = 0; i < enemies.size(); i++) {
-    Enemy a = enemies.get(i);
+    Enemy a = enemies.get(i); // if you are hit, reset everything
     if (a.checkCollision(player) == true) {
       bullets.clear();
       enemies.clear();
@@ -98,7 +104,7 @@ void Collision() {
     for (int b = 0; b < bullets.size(); b++) {
       Bullet bullet = bullets.get(b);
       if (a.checkCollision(bullet) == true) {
-        //remove bullet and astroid if conditions are true
+        //remove bullet and enemy if conditions are true
         
         points++;
         
@@ -123,7 +129,7 @@ void drawEnemy() {
       i--;
     }
   }
-  //prinln(asteroids.size());
+ 
 }
 
 void keyPressed() {
