@@ -129,9 +129,9 @@ void drawEnemy() {
       i--;
     }
   }
- 
 }
 
+// controls
 void keyPressed() {
   if (key == CODED) {
     if (keyCode == UP) {
