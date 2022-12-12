@@ -14,6 +14,7 @@ int bot_x = 0, bot_x2 = 600
    ,mid_x = 0, mid_x2 = 600
    ,top_x = 0, top_x2 = 600;
 
+// spawn enemies
 ArrayList<Enemy> enemies = new ArrayList<Enemy>();
 int enemySpawn = 60; // The lower the more enemies you get
 

@@ -15,6 +15,7 @@ class Player {
     this.vx = 0;
   }
   
+  // movements
   void drawPlayer() {
     if (upPressed == true) {
       vy= -speed;
