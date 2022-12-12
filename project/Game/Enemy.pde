@@ -23,7 +23,12 @@ class Enemy {
     ellipse(x-19, y-14, size/8, size/8);
     x+=vy;
   }
-
+/*
+REFERENCES
+https://processing.org/reference/boolean.html
+https://happycoding.io/tutorials/processing/collision-detection
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/instanceof
+*/
   boolean checkCollision(Object other) {
     if (other instanceof Player) {
       Player playerShip = (Player) other;
