@@ -8,7 +8,7 @@
 
 2. Press space to shoot.
 
-3. Shoot "enemies" to gain points
+3. Shoot "enemies" to gain points.
 
 4. If you get hit by the enemy, then everything resets.
 
