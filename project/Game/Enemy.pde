@@ -1,3 +1,6 @@
+/* Enemy class
+   physics (vectors), draw, and output
+*/
 class Enemy {
   float size, x, y;
 
@@ -5,8 +8,8 @@ class Enemy {
 
   Enemy(float size) {
     this.size = size/2;
-    //this.x = random(width);
-    //this.y = -size;
+    this.x = random(width);
+    this.y = -size;
     
     this.x = -size;
     this.y = random(height);

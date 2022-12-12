@@ -1,3 +1,7 @@
+/* Player class
+   physics (vectors), draw, controls, and output
+*/
+
 class Player {
   float x, y, vx, vy;
   boolean upPressed, downPressed, leftPressed, rightPressed;

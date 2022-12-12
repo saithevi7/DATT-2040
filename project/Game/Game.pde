@@ -17,6 +17,7 @@ int bot_x = 0, bot_x2 = 600
 ArrayList<Enemy> enemies = new ArrayList<Enemy>();
 int enemySpawn = 60; // The lower the more enemies you get
 
+// spray multiple bullets
 ArrayList<Bullet> bullets = new ArrayList<Bullet>();
 
 // track points

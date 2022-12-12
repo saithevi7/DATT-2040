@@ -1,3 +1,6 @@
+/* Bullet class
+   physics (vectors), draw, and output as run();
+*/
 class Bullet {
   float x, y, vy;
   float size;
