@@ -30,7 +30,7 @@ class Enemy {
       float apothem = 10 * tan(60);
       float distance = dist(x, y, playerShip.x, playerShip.y-apothem);
       if (distance < size/2 + apothem + 10) {
-        //background(255, 0, 0);
+        background(255, 0, 0); // red screen if hit
         fill(255, 0, 0, 100);
         rect(0, 0, width, height);
         fill(255);
